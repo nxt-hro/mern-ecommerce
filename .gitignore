@@ -22,7 +22,6 @@ out/
 *.swp
 *.swo
 *~
-.DS_Store
 *.sublime-workspace
 
 # Logs
@@ -39,6 +38,17 @@ server/uploads/
 # OS
 .DS_Store
 Thumbs.db
+
+# Next.js / v0 leftovers
+app/
+components/ui/
+hooks/
+lib/
+styles/
+next.config.mjs
+postcss.config.mjs
+tsconfig.json
+components.json
 
 # v0 sandbox internal files
 __v0_runtime_loader.js

@@ -1,0 +1,130 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                          QUICK REFERENCE CARD                              ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+PROJECT LOCATION
+───────────────────────────────────────────────────────────────────────────
+  /vercel/share/v0-project/
+
+ROOT COMMANDS
+───────────────────────────────────────────────────────────────────────────
+  pnpm run dev              → Start both server & client together
+  pnpm run client           → Start frontend only
+  pnpm run server           → Start backend only
+  pnpm run build            → Build frontend for production
+  pnpm run seed             → Populate database with sample products
+
+KEY FILES
+───────────────────────────────────────────────────────────────────────────
+  server/.env               → Database connection & JWT secret
+  server/index.js           → Express server setup
+  client/vite.config.js     → Frontend build config
+  client/src/App.jsx        → Main React component
+
+IMPORTANT DIRECTORIES
+───────────────────────────────────────────────────────────────────────────
+  server/models/            → MongoDB schemas
+  server/routes/            → API endpoints
+  server/middleware/        → Auth validation
+  server/uploads/           → Product images
+  client/src/pages/         → React pages
+  client/src/components/    → Reusable components
+  client/src/store/         → Zustand state
+
+SETUP CHECKLIST
+───────────────────────────────────────────────────────────────────────────
+  [ ] Edit server/.env with MongoDB connection
+  [ ] (Optional) Run: pnpm run seed
+  [ ] Run: pnpm run dev
+  [ ] Open: http://localhost:5173
+
+URLS AFTER RUNNING
+───────────────────────────────────────────────────────────────────────────
+  Frontend   → http://localhost:5173
+  Backend    → http://localhost:5000
+
+API ENDPOINTS
+───────────────────────────────────────────────────────────────────────────
+  POST   /api/auth/register     → Create account
+  POST   /api/auth/login        → Login
+  GET    /api/products          → Get all products
+  GET    /api/products/:id      → Get one product
+  POST   /api/products          → Create product (auth required)
+  POST   /api/orders            → Create order (auth required)
+
+DEPENDENCIES INSTALLED
+───────────────────────────────────────────────────────────────────────────
+  ✓ express (backend)
+  ✓ mongoose (database)
+  ✓ bcryptjs (password hashing)
+  ✓ jsonwebtoken (JWT auth)
+  ✓ multer (file uploads)
+  ✓ cors (cross-origin)
+  ✓ react (frontend)
+  ✓ zustand (state management)
+  ✓ axios (HTTP client)
+  ✓ react-router-dom (routing)
+  ✓ @mui/material (UI components)
+  ✓ vite (build tool)
+
+QUICK FIXES
+───────────────────────────────────────────────────────────────────────────
+  Issue: "Cannot find module"
+  Fix:   cd /vercel/share/v0-project && pnpm install
+
+  Issue: MongoDB connection fails
+  Fix:   Check server/.env MONGODB_URI
+
+  Issue: Port 5000/5173 in use
+  Fix:   Change PORT in server/.env
+         Change port in client/vite.config.js
+
+  Issue: Image upload fails
+  Fix:   Create server/uploads/ directory
+
+DOCUMENTATION FILES
+───────────────────────────────────────────────────────────────────────────
+  RUN_ME_FIRST.txt          → Start here!
+  QUICK_START.md            → 30-second setup
+  ENV_SETUP.md              → MongoDB configuration
+  SETUP_GUIDE.md            → Detailed instructions
+  INSTALLATION_CHECKLIST.md → Verify everything
+  README.md                 → Full documentation
+  SETUP_SUMMARY.md          → What was created
+
+FEATURES
+───────────────────────────────────────────────────────────────────────────
+  ✓ User registration & login
+  ✓ Browse products
+  ✓ Product details page
+  ✓ Shopping cart
+  ✓ Checkout & orders
+  ✓ Product upload
+  ✓ Image uploads
+  ✓ Secure authentication
+  ✓ Protected routes
+
+PORTS
+───────────────────────────────────────────────────────────────────────────
+  Frontend: 5173
+  Backend:  5000
+  MongoDB:  27017 (local only)
+
+DATABASE
+───────────────────────────────────────────────────────────────────────────
+  Provider: MongoDB
+  Default:  mongodb://localhost:27017/ecommerce
+  Atlas:    mongodb+srv://user:pass@cluster.mongodb.net/ecommerce
+  File:     server/.env
+
+═════════════════════════════════════════════════════════════════════════════
+
+READY TO START?
+
+1. Edit: /vercel/share/v0-project/server/.env
+2. Run:  cd /vercel/share/v0-project && pnpm run dev
+3. Open: http://localhost:5173
+
+That's it! 🚀
+
+═════════════════════════════════════════════════════════════════════════════

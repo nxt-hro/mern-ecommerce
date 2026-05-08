@@ -1,5 +1,7 @@
 # E-Commerce Full-Stack Application
 
+### Note: I did this Project back when I was doing MERN Stack course.  
+
 A complete e-commerce web application built with React.js (Vite) on the frontend and Node.js/Express with MongoDB on the backend.
 
 ## Project Structure

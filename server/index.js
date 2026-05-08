@@ -14,7 +14,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://project-qjehu-cie31i1vn-nxthero18s-projects.vercel.app/' // Vercel URL
+    'https://project-qjehu-git-main-nxthero18s-projects.vercel.app' // Vercel URL
   ],
   credentials: true
 }));

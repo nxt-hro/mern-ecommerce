@@ -14,7 +14,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://your-app-name.vercel.app' // add this after you know your Vercel URL
+    'https://project-qjehu-cie31i1vn-nxthero18s-projects.vercel.app/' // Vercel URL
   ],
   credentials: true
 }));

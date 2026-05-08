@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await api.get('/products');
+        const response = await api.get('/api/products');
         setProducts(response.data);
       } catch (err) {
         setError('Failed to load products');
